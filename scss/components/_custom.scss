@@ -1,0 +1,164 @@
+body
+{
+	margin:0px;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	color:#61645a;
+	font-weight: 400;
+	line-height:24px;
+	overflow-x:hidden;
+	
+	text-rendering: optimizeLegibility; 
+	-webkit-font-smoothing: antialiased;
+}
+::selection {
+	background: #3D4E60; /* Safari */
+	color:#fff;
+}
+::-moz-selection {
+	background: #3D4E60; /* Firefox */
+	color:#fff;
+}
+
+h1, h2, h3, h4, h5, h6 
+{	
+	font-weight: 200;
+	font-family: 'Dosis', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+h2
+{
+	font-size:26px;
+	color:#3b3a3a;	
+	line-height:36px;
+	margin:0 0 15px 0;
+}
+h3
+{
+	font-size:22px;
+	color:#252525;
+	margin:0 0 15px 0;
+}
+label
+{
+	font-weight:normal;
+}
+p{
+	margin:0 0 15px 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ol
+{
+	padding:0px;
+	list-style-position:inside;
+}
+ol, li
+{
+	margin-bottom:0px;
+	list-style:none;
+	position:relative;
+}
+li
+{
+	
+}
+img{
+    max-width: 100%;
+}
+
+
+/* page style */
+header{
+    position: relative;
+    z-index: 1;
+    
+    nav{
+        background-color: $default_color;
+    }
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:0px;
+    top: 13px;
+    max-width: 60px;
+    
+    .brand-logo{
+        position: static;
+    }
+}
+
+/* home slider */
+.home-sportlight{
+    position: relative;
+    #sport-init{
+        margin: 0;
+        padding: 0;
+        
+        > li{
+            height: 450px;
+            background: $grayes;
+
+            
+            background-position: top center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            
+            .slider-background{
+                display: none;
+            }
+        }
+    }
+    
+    .lSSlideOuter {
+        .lSPager{
+            &.lSpg{
+                bottom: 40px;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+
+                li{
+                    transition: transform ease 0.2s;
+                    -webkit-transition: transform ease 0.2s;
+                    -moz-transition: transform ease 0.2s;
+                    -ms-transition: transform ease 0.2s;
+                    -o-transition: transform ease 0.2s;
+
+                    a{
+                        width: 11px;
+                        height: 11px;
+                        background: $white;
+                    }
+                    &.active{
+                        transform: scale(1.4);
+                        -webkit-transform: scale(1.4);
+                        -moz-transform: scale(1.4);
+                        -ms-transform: scale(1.4);
+                        -o-transform: scale(1.4);
+
+                        a{
+                           background-color: $default_color; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* about section */
+
+.about-section{
+    padding: 60px 0;
+}
