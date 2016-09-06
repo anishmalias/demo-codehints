@@ -23,8 +23,7 @@ body
 
 h1, h2, h3, h4, h5, h6 
 {	
-	font-weight: 200;
-	font-family: 'Dosis', sans-serif;
+	font-weight:300;
 	-webkit-font-smoothing: antialiased;
 }
 h2
@@ -162,3 +161,79 @@ header{
 .about-section{
     padding: 60px 0;
 }
+.about-section{
+    h2{
+        font-size: 29px;
+        line-height: normal;
+        
+        span{
+            display: inline-block;
+            border-bottom: 2px solid $secondary_color;
+        }
+    }
+}
+
+
+.features-section{
+    background: $secondary_color;
+    padding: 49px 0;
+}
+
+.features-box{
+    position: relative;
+    
+    .feature-icon{
+        width: 80px;
+        height: 80px;
+        background: $white;
+        text-align: center;
+        font-size: 26px;
+        color: $secondary_color;
+        padding-top: 25px;
+        margin: 0 auto;
+        
+        @include border_radius;
+    }
+    
+    .features-content{
+        text-align: center;
+        padding: 20px 0 0 0;
+        
+        h3{
+            color: $white;
+            font-weight: 500;
+            font-size: 19px;
+        }
+        p{
+            color: $white;
+            line-height: 21px;
+            margin: 0;
+            
+            + p{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
